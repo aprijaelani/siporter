@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://siporter.puskesmasjoharbaru.com/master-pasien -->
+<html style="height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>.: SI PORTER :.</title>
+		<!-- Tell the browser to be responsive to screen width --><meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="shortcut icon" href="http://siporter.puskesmasjoharbaru.com/favicon.ico">
+		<!-- Font Awesome --><link rel="stylesheet" href="./__ SI PORTER _._files/font-awesome.min.css">
+		<!-- Ionicons --><link rel="stylesheet" href="./__ SI PORTER _._files/ionicons.min.css">
+		<!-- Bootstrap 3.3.7 --><link rel="stylesheet" href="./__ SI PORTER _._files/bootstrap.min.css">
+		<!-- Theme style --><link rel="stylesheet" href="./__ SI PORTER _._files/AdminLTE.min.css">
+		<!-- DataTables --><link rel="stylesheet" href="./__ SI PORTER _._files/dataTables.bootstrap.css">
+		<!-- jQueryUI --><link rel="stylesheet" href="./__ SI PORTER _._files/jquery-ui.min.css" "="">
+		<!-- Datepicker --><link rel="stylesheet" href="./__ SI PORTER _._files/datepicker3.css">
+		<link rel="stylesheet" href="./__ SI PORTER _._files/_all-skins.min.css">
+		<link rel="stylesheet" href="./__ SI PORTER _._files/all.css">
+		<link rel="stylesheet" href="./__ SI PORTER _._files/jquery.fileupload.css">
+		<link rel="stylesheet" href="./__ SI PORTER _._files/animate.css">
+		<script>
+			var dataChanged = false;
+			var new_tgl	= new Date();
+			var new_ye	= String(new_tgl.getFullYear());
+			var new_mo	= String((new_tgl.getMonth() + 1));
+				new_mo	= new_mo.length < 2 ? '0' + new_mo : new_mo;
+			var new_da	= String(new_tgl.getDate());
+				new_da	= new_da.length < 2 ? '0' + new_da : new_da;
+			new_tgl = new_da + '-' +  new_mo + '-' + new_ye;
+			mys_tgl = new_ye + '-' +  new_mo + '-' + new_da;
+						new_tanggal = false;
+		</script>
+
+		<!-- jQuery 2.2.3 --><script src="./__ SI PORTER _._files/jquery-3.1.1.min.js.download"></script>
+		<!-- Bootstrap 3.3.7 --><script src="./__ SI PORTER _._files/bootstrap.min.js.download"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="dist/js/html5shiv.min.js"></script>
+		<script src="dist/js/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			/*.form-group-odds { background-color: #0070a3; padding: 2px; }
+			.form-group-even { background-color: #05B2D2; padding: 2px; }*/
+			.form-group-oddsi { background-color: #05B2D2; padding: 2px; }
+			.form-group-eveni { background-color: #587ea3; padding: 2px; }
+		</style>
+
+		<!-- Google Font -->
+		<link rel="stylesheet" href="./__ SI PORTER _._files/css.css">
+	</head>
+	<body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
+		<div class="wrapper" style="height: auto; min-height: 100%;">
+
+			<header class="main-header">
+				<a href="http://siporter.puskesmasjoharbaru.com/master-pasien" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini"><b>SP</b></span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg"><b>.: SI PORTER :.</b></span>
+				</a><!-- Logo -->
+
+				<!-- Header Navbar: style can be found in header.less -->
+				<nav class="navbar navbar-static-top">
+					<!-- Sidebar toggle button-->
+					<a href="http://siporter.puskesmasjoharbaru.com/master-pasien#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">			<!-- Notifications: style can be found in dropdown.less -->
+			<li class="dropdown messages-menu">
+			<a href="http://siporter.puskesmasjoharbaru.com/master-pasien#" class="dropdown-toggle" data-toggle="dropdown">
+				<i class="fa fa-bell-o"></i>
+				<span class="label label-warning">0</span>
+			</a>
+			<ul class="dropdown-menu">
+				<li class="header"><strong>0</strong> notifikasi memerlukan tindakan</li>
+					<li>
+						<!-- inner menu: contains the actual data -->
+						<ul class="menu">
+												</ul>
+					</li>
+				<li class="footer"><a href="http://siporter.puskesmasjoharbaru.com/master-pasien#">Lihat semua notofikasi</a></li>
+			</ul>
+			</li>
+</ul>
+					</div><!-- Navbar Right Menu -->
+				</nav>
+			</header>
+
+			<!-- Left side column. contains the logo and sidebar -->
+			<aside class="main-sidebar">
+				
+	<!-- sidebar: style can be found in sidebar.less -->
+	<section class="sidebar">
+		<!-- Sidebar user panel -->
+
+		<!-- User panel -->
+		<div class="user-panel">
+			<div class="pull-left image">
+				<img src="./__ SI PORTER _._files/iis.png" class="img-circle" alt="User Image">
+			</div>
+			<div class="pull-left info">
+				<p>Iis Lestariyati</p>
+				<a href="http://siporter.puskesmasjoharbaru.com/master-pasien"><i class="fa fa-circle text-success"></i> Online</a>
+				<a href="http://siporter.puskesmasjoharbaru.com/logging_out"><i class="fa fa-circle text-danger"></i> Logout</a>
+			</div>
+			<br>&nbsp;<br>
+		</div>
+		<!-- User panel -->
+
+		<!-- search form -->
+		<form action="http://siporter.puskesmasjoharbaru.com/master-pasien#" method="get" class="sidebar-form">
+			<div class="input-group">
+				<input type="text" name="q" class="form-control" placeholder="Cari...">
+				<span class="input-group-btn">
+					<button type="submit" name="search" id="search-btn" class="btn btn-flat">
+						<i class="fa fa-search"></i>
+					</button>
+				</span>
+			</div>
+		</form>
+		<!-- /.search form -->
+
+		<!-- sidebar menu: : style can be found in sidebar.less -->
+		<ul class="sidebar-menu tree" data-widget="tree">
+			<li class="header">MENU</li>
+			<li><a href="http://siporter.puskesmasjoharbaru.com/"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+			<li><a href="http://siporter.puskesmasjoharbaru.com/master-pasien" id="btnChangePassword"><i class="fa fa-key text-yellow"></i> <span>Ubah Kata Sandi</span></a></li>
+			<li class="treeview active menu-open">
+				<a href="http://siporter.puskesmasjoharbaru.com/master-pasien#">
+					<i class="fa fa-edit"></i> <span>Formulir</span>
+					<span class="pull-right-container">
+						<i class="fa fa-angle-left pull-right"></i>
+					</span>
+				</a>
+				
+				<ul class="treeview-menu">
+					<li><a href="http://siporter.puskesmasjoharbaru.com/tb06"><i class="fa ion-ios-chatbubble-outline text-green"></i> TB06 - Daftar Terduga TB</a></li>
+					<li><a href="http://siporter.puskesmasjoharbaru.com/tb05"><i class="fa fa-eyedropper text-blue"></i> TB05 - Permohonan Lab.</a></li>
+					<li><a href="http://siporter.puskesmasjoharbaru.com/tb04"><i class="fa fa-edit text-fuchsia"></i> TB04 - Register Lab.</a></li>
+					<li><a href="http://siporter.puskesmasjoharbaru.com/tb01"><i class="fa fa-glass text-yellow"></i> TB01 - Kartu Pengobatan</a></li>
+					<li><a href="http://siporter.puskesmasjoharbaru.com/tb02"><i class="fa fa-credit-card text-red"></i> TB02 - Jadwal Obat &amp; Periksa</a></li>
+					<li><a href="http://siporter.puskesmasjoharbaru.com/tb03"><i class="fa fa-folder-open-o text-gray"></i> TB03 - Register TBC UPK</a></li>
+									</ul>
+			</li>
+			<li class="treeview active menu-open">
+				<a href="http://siporter.puskesmasjoharbaru.com/master-pasien#">
+					<i class="fa fa-edit"></i> <span>Data Master</span>
+					<span class="pull-right-container">
+						<i class="fa fa-angle-left pull-right"></i>
+					</span>
+				</a>
+				
+				<ul class="treeview-menu">
+					<li class="na"><a href="http://siporter.puskesmasjoharbaru.com/master-pasien"><i class="fa fa-medkit text-green"></i> <span>Data Puskesmas</span></a></li>
+					<li><a href="http://siporter.puskesmasjoharbaru.com/master-pasien"><i class="fa fa-wheelchair text-red"></i> Data Pasien</a></li>
+					<li class="na"><a href="http://siporter.puskesmasjoharbaru.com/master-pasien"><i class="fa fa-user-md text-yellow"></i> <span>Data Pengguna</span></a></li>
+				</ul>
+				<script>
+					$('.na').click(function()
+					{
+						var menu_name = $(this).find('span').html();
+						warn('Menu <u>' + menu_name + '</u> dinonaktifkan untuk modifikasi!', 'danger');
+						return false;
+					});
+				</script>
+			</li>
+		</ul>
+	</section><!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper" style="min-height: 544px;">
+			<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1>
+						Master Pasien<small>Data Pasien - Puskesmas Kecamatan Johar Baru</small>					</h1>
+					<ol class="breadcrumb">
+						<li><a href="http://siporter.puskesmasjoharbaru.com/master-pasien#"><i class="fa fa-dashboard"></i> Master</a></li>
+						<li class="active">Master Pasien</li>
+					</ol>
+				</section>
+
+				<section class="content"><!-- Main content -->
+					<br>
+<form class="form-horizontal" onsubmit="return false;">
+	<div class="row">
+		<div class="col-md-12"><!-- Custom Tabs -->
+			<div class="box box-primary">
+				<br>
+				<div class="box-body">
+					<div class="row-fluid">
+						<div class="col-md-9">
+							<div class="form-group" id="grpNIK">
+								<label for="txtNIK" class="col-sm-3 control-label" style="text-align: left;">NIK</label>
+								<div class="control col-sm-4">
+									<input type="text" class="form-control" name="txtNIK" id="txtNIK" value="" maxlength="16" placeholder="Nomor Induk Kependudukan">
+									<span class="help-inline text-red" id="lblNIK"></span>
+								</div>
+							</div><!-- NIK -->
+							<div class="form-group" id="grpNamaLengkap">
+								<label for="txtNamaLengkap" class="col-sm-3 control-label" style="text-align: left;">Nama Lengkap</label>
+								<div class="control col-sm-4">
+									<input type="text" class="form-control" name="txtNamaLengkap" id="txtNamaLengkap" value="" maxlength="77" placeholder="Nama Lengkap">
+									<span class="help-inline text-red" id="lblNamaLengkap"></span>
+								</div>
+							</div><!-- Nama Lengkap -->
+							<div class="form-group" id="grpUmur">
+								<label for="txtUmur" class="col-sm-3 control-label" style="text-align: left;">Umur</label>
+								<div class="control col-sm-4">
+									<input type="number" class="form-control" name="txtUmur" id="txtUmur" value="" maxlength="22" placeholder="Umur">
+									<span class="help-inline text-red" id="lblUmur"></span>
+								</div>
+							</div><!-- Umur -->
+							<div class="form-group" id="grpKelamin">
+								<label for="optKelamin" class="col-sm-3 control-label" style="text-align: left;">Jenis Kelamin</label>
+
+								<div class="col-sm-4">
+									<input type="hidden" name="txtKelamin" id="txtKelamin" value="1">
+									<label><div class="iradio_polaris" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" name="optKelamin" id="optKelamin1" value="1" class="flat-red optKelamin" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Pria</label>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<label><div class="iradio_polaris" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" name="optKelamin" id="optKelamin0" value="0" class="flat-red optKelamin" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Wanita</label>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>
+							</div><!-- Kelamin -->
+						</div>
+						<div class="col-md-3">
+							<div>
+								<span class="btn btn-primary fileinput-button">
+									<i class="glyphicon glyphicon-plus"></i>
+									<span>Pilih Foto</span>
+									<input id="fileupload" type="file" name="files[]" multiple="">
+								</span>
+								<div id="progress" class="progress">
+									<div class="progress-bar progress-bar-success"></div>
+								</div>
+								<div id="files" class="files"></div>
+							</div>
+					</div>
+					<div class="row-fluid">
+						<div class="col-md-9">
+							<div class="form-group" id="grpAlamat">
+								<label for="txtAlamat" class="col-sm-3 control-label" style="text-align: left;">Alamat</label>
+								<div class="control col-sm-4">
+									<textarea class="form-control" name="txtAlamat" id="txtAlamat" value="" placeholder="Alamat"></textarea>
+									<span class="help-inline text-red" id="lblAlamat"></span>
+								</div>
+							</div><!-- Alamat -->
+							<div class="form-group" id="grpRTRW">
+								<label for="txtRT" class="col-sm-3 control-label" style="text-align: left;">&nbsp;</label>
+								<label for="txtRT" class="col-sm-1 control-label" style="text-align: left;">RT</label>
+								<div class="control col-sm-2">
+									<input type="number" class="form-control" name="txtRT" id="txtRT" value="" maxlength="3" placeholder="RT.">
+									<span class="help-inline text-red" id="lblRT"></span>
+								</div>
+								<label for="txtRW" class="col-sm-1 control-label" style="text-align: left;">RW</label>
+								<div class="control col-sm-2">
+									<input type="number" class="form-control" name="txtRW" id="txtRW" value="" maxlength="3" placeholder="RW.">
+									<span class="help-inline text-red" id="lblRW"></span>
+								</div>
+							</div><!-- RT / RW -->
+							<div class="form-group" id="grpKota">
+								<label for="cmbKota" class="col-sm-3 control-label" style="text-align: left;">Kota</label>
+								<div class="control col-sm-7">
+									<select class="form-control" name="cmbKota" id="cmbKota" disabled="">
+										<option value="3173" selected="">Kota Jakarta Pusat</option>
+										<option value="3172">Kota Jakarta Timur</option>
+										<option value="3174">Kota Jakarta Barat</option>
+										<option value="3175">Kota Jakarta Utara</option>
+										<option value="3171">Kota Jakarta Selatan</option>
+									</select>
+									<input type="hidden" id="txtKotaVal" value="3173">
+									<span class="help-inline text-red" id="lblKota"></span>
+								</div>
+							</div><!-- Kota -->
+							<div class="form-group" id="grpKec">
+								<label for="cmbKec" class="col-sm-3 control-label" style="text-align: left;">Kec.</label>
+								<div class="control col-sm-7">
+									<select class="form-control" name="cmbKec" id="cmbKec" disabled="">
+										<option value="3173040" selected="">Johar Baru</option>
+									</select>
+									<input type="hidden" id="txtKecVal" value="3173040">
+									<span class="help-inline text-red" id="lblKec"></span>
+								</div>
+							</div><!-- Kecamatan -->
+							<div class="form-group" id="grpKel">
+								<label for="cmbKel" class="col-sm-3 control-label" style="text-align: left;">Kel.</label>
+								<div class="control col-sm-7">
+									<select class="form-control" name="cmbKel" id="cmbKel">
+										<option value="3173040001">Johar Baru</option>
+										<option value="3173040002">Kampung Rawa</option>
+										<option value="3173040003">Tanah Tinggi</option>
+										<option value="3173040004">Galur</option>
+									</select>
+									<input type="hidden" id="txtKelVal" value="">
+									<span class="help-inline text-red" id="lblKel"></span>
+								</div>
+							</div><!-- Kelurahan -->
+							<div class="btn-toolbar">
+								<a class="btn btn-primary" id="btnSimpan">Simpan</a>
+								<a class="btn btn-danger pull-left" disabled="">Batal</a>
+							</div>
+							<script>
+								$('#btnSimpan').click(function()
+								{
+									warn('Penyimpanan data berhasil!', 'success');
+								});
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+				</div></form></section><!-- /.Main content -->
+			</div><!-- /.content-wrapper -->
+
+			<footer class="main-footer">
+				<div class="pull-right hidden-xs">
+					<b>SI PORTER Versi</b> 1.0
+				</div>
+				<strong>Copyright © 2017 <a href="http://ranuel.id/" target="_blank">RaNuEL.id</a>.</strong> Hak cipta dilindungi oleh undang-undang.
+			</footer>
+			
+			<!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+			<div class="control-sidebar-bg"></div>
+
+		</div><!-- ./wrapper -->
+
+		<div class="modal modal-warning fade" id="mdlChangePass">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</a>
+						<h4 class="modal-title">Ubah Password</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" onsubmit="return false;">
+							<div class="row" id="grpOldPassword">
+								<label for="txtPassword" class="col-sm-3 control-label" style="text-align: left;">Kata Sandi Lama</label>
+								<div class="control col-sm-8">
+									<input type="password" class="form-control" name="txtOldPassword" id="txtOldPassword" value="" maxlength="22" placeholder="Kata Sandi Lama">
+									<span class="help-inline text-red" id="lblOldPassword"></span>
+								</div>
+							</div>
+							<div class="row" id="grpPassword">
+								<label for="txtPassword" class="col-sm-3 control-label" style="text-align: left;">Kata Sandi</label>
+								<div class="control col-sm-8">
+									<input type="password" class="form-control" name="txtPassword" id="txtPassword" value="" maxlength="22" placeholder="Kata Sandi">
+									<span class="help-inline text-red" id="lblPassword"></span>
+								</div>
+							</div>
+							<div class="row" id="grpConfirm">
+								<label for="txtConfirm" class="col-sm-3 control-label" style="text-align: left;">Konfirmasi</label>
+								<div class="control col-sm-8">
+									<input type="password" class="form-control" name="txtConfirm" id="txtConfirm" value="" maxlength="22" placeholder="Konfirmasi Kata Sandi">
+									<span class="help-inline text-red" id="lblConfirm"></span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-outline pull-left" data-dismiss="modal">Batal</a>
+						<a class="btn btn-outline" id="btnUbahPass">Simpan</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SI PORTER  --><script src="./__ SI PORTER _._files/adminlte.js.download"></script>
+		<!-- iCheck 101 --><script src="./__ SI PORTER _._files/icheck.min.js.download"></script>
+		<!-- jQueryUI   --><script src="./__ SI PORTER _._files/jquery-ui.min.js.download"></script>
+		<!-- DataTables --><script src="./__ SI PORTER _._files/jquery.dataTables.min.js.download"></script>
+		<!-- DataTables --><script src="./__ SI PORTER _._files/dataTables.bootstrap.min.js.download"></script>
+		<!-- Datepicker --><script src="./__ SI PORTER _._files/bootstrap-datepicker.js.download"></script>
+		<!-- Datepicker --><script src="./__ SI PORTER _._files/bootstrap-notify.min.js.download"></script>
+		<!-- SI PORTER  --><script src="./__ SI PORTER _._files/dashboard2.js.download"></script>
+		<!-- SI PORTER  --><script src="./__ SI PORTER _._files/siporter.js.download"></script>
+		<!-- SI PORTER  --><script src="./__ SI PORTER _._files/form.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.ui.widget.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/load-image.all.min.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/canvas-to-blob.min.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.iframe-transport.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.fileupload.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.fileupload-process.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.fileupload-image.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.fileupload-audio.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.fileupload-video.js.download"></script>
+		<!-- FileUpload --><script src="./__ SI PORTER _._files/jquery.fileupload-validate.js.download"></script>
+		<script>
+			$(document).ready(function()
+			{
+				$.fn.datepicker.dates['id'] = {/* jshint ignore:line */
+					days: ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'],
+					daysShort: ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'],
+					daysMin: ['Mi', 'Sn', 'Sl', 'Rb', 'Km', 'Ju', 'Sa'],
+					months: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+					monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'],
+					today: 'Hari ini',
+					clear: 'Bersihkan',
+					format: 'dd/mm/yyyy',
+					titleFormat: 'MM yyyy',
+					weekStart: 0
+				};
+
+				$('#btnChangePassword').click(function()
+				{
+					$('#mdlChangePass').modal('show');
+					return false;
+				});
+
+				$('#mdlChangePass').on('shown.bs.modal', function()
+				{
+					$('#txtOldPassword').focus();
+				});
+
+				$('#btnUbahPass').click(function()
+				{
+					var pass = $('#txtPassword').val();
+					var conf = $('#txtConfirm').val();
+					var oldp = $('#txtOldPassword').val();
+
+					$('#txtPassword').val('');
+					$('#txtConfirm').val('');
+					$('#txtOldPassword').val('');
+
+					if (pass !== conf)
+					{
+						$('#lblConfirm').html('Kata Sandi berbeda dengan Konfirmasi');
+						$('#txtPassword').focus();
+						return;
+					}
+
+					$('#mdlChangePass').modal('hide');
+
+					jQuery.ajax({
+						'type':'POST',
+						'url':'password',
+						'data':
+						{
+							'password'		: pass,
+							'confirm'		: conf,
+							'oldpass'		: oldp
+						},
+						'cache':false,
+						'success':function(html)
+						{
+							if (html === 'ok')
+							{
+								warn('Penyimpanan data berhasil', 'success');
+							}
+							else
+							{
+								warn('Penyimpanan data gagal!\n' + html, 'danger');
+							}
+						}
+					});
+				});
+			});
+
+			$('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+				checkboxClass: 'icheckbox_polaris',
+				radioClass: 'iradio_polaris'
+			});
+
+			function reset_input(field, type)
+			{
+				if (typeof type !== 'undefined') type = 'txt';
+				$('#' + type + field).val('');
+				$('#lbl' + field).html('');
+				$('#grp' + field).removeClass('has-error');
+			}
+
+			function warn(msg, type)
+			{
+				var icon = 'exclamation-triangle';
+				var message	= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+				type = type !== 'success' && type !== 'danger' ? 'info' : type;
+
+				switch (type)
+				{
+					case 'success':
+						icon = 'check';
+						break;
+					case 'danger':
+						icon = 'close';
+						break;
+				}
+
+				message	= '<span class="fa fa-' + icon + '"></span>' + message + msg;
+
+				$.notify({
+					title	: '<strong>SI PORTER</strong><br />&nbsp;<br />',
+					message	: message
+				},
+				{
+					type: type,
+					/*allow_dismiss: true,*/
+					/*delay: 100,*/
+					/*animate:
+					{
+						enter: 'animated bounceInDown',
+						exit: 'animated bounceOutUp'
+					}*/
+				});
+			}
+
+			function msgbox(message, icon)
+			{
+				if (typeof icon !== 'undefined')
+				{
+					$.notify({
+						icon	: icon,
+						title	: ".: SI PORTER :.",
+						message	: message
+					});
+				}
+				else
+				{
+					$.notify({
+						title	: ".: SI PORTER :.",
+						message	: message
+					});
+				}
+			}
+
+			function GetNotif(page, mid)
+			{
+				var that = $('#' + mid).html();
+				var postdata;
+				jQuery.ajax({
+					'type':'POST',
+					'url':page,
+					'data':{
+						'par0':page
+					},
+					'cache':false,
+					'success':function(html)
+					{
+						if((html.trim()).length !== (that.trim()).length + 28)
+						{
+							$('#' + mid).html(html);
+						}
+					}
+				});
+			}
+
+			function setIntvl(par1, par2)
+			{
+				if($('#' + par2).length)
+				{
+					setInterval(function() { GetNotif(par1, par2) }, 7777);
+				}
+			}
+		</script>
+
+		<script>
+			/*jslint unparam: true, regexp: true */
+			/*global window, $ */
+			$(function () {
+				'use strict';
+				// Change this to the location of your server-side upload handler:
+				var url = window.location.hostname === 'blueimp.github.io' ?
+							'//jquery-file-upload.appspot.com/' : 'server/php/',
+					uploadButton = $('<button/>')
+						.addClass('btn btn-primary')
+						.prop('disabled', true)
+						.text('Processing...')
+						.on('click', function () {
+							var $this = $(this),
+								data = $this.data();
+							$this
+								.off('click')
+								.text('Abort')
+								.on('click', function () {
+									$this.remove();
+									data.abort();
+								});
+							data.submit().always(function () {
+								$this.remove();
+							});
+						});
+				$('#fileupload').fileupload({
+					url: url,
+					dataType: 'json',
+					autoUpload: false,
+					acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i,
+					maxFileSize: 999000,
+					// Enable image resizing, except for Android and Opera,
+					// which actually support image resizing, but fail to
+					// send Blob objects via XHR requests:
+					disableImageResize: /Android(?!.*Chrome)|Opera/
+						.test(window.navigator.userAgent),
+					previewMaxWidth: 100,
+					previewMaxHeight: 100,
+					previewCrop: true
+				}).on('fileuploadadd', function (e, data) {
+					data.context = $('<div/>').appendTo('#files');
+					$.each(data.files, function (index, file) {
+						var node = $('<p/>')
+								.append($('<span/>').text(file.name));
+						if (!index) {
+							node
+								.append('<br>')
+								.append(uploadButton.clone(true).data(data));
+						}
+						node.appendTo(data.context);
+					});
+				}).on('fileuploadprocessalways', function (e, data) {
+					var index = data.index,
+						file = data.files[index],
+						node = $(data.context.children()[index]);
+					if (file.preview) {
+						node
+							.prepend('<br>')
+							.prepend(file.preview);
+					}
+					if (file.error) {
+						node
+							.append('<br>')
+							.append($('<span class="text-danger"/>').text(file.error));
+					}
+					if (index + 1 === data.files.length) {
+						data.context.find('button')
+							.text('Upload')
+							.prop('disabled', !!data.files.error);
+					}
+				}).on('fileuploadprogressall', function (e, data) {
+					var progress = parseInt(data.loaded / data.total * 100, 10);
+					$('#progress .progress-bar').css(
+						'width',
+						progress + '%'
+					);
+				}).on('fileuploaddone', function (e, data) {
+					$.each(data.result.files, function (index, file) {
+						if (file.url) {
+							var link = $('<a>')
+								.attr('target', '_blank')
+								.prop('href', file.url);
+							$(data.context.children()[index])
+								.wrap(link);
+						} else if (file.error) {
+							var error = $('<span class="text-danger"/>').text(file.error);
+							$(data.context.children()[index])
+								.append('<br>')
+								.append(error);
+						}
+					});
+				}).on('fileuploadfail', function (e, data) {
+					$.each(data.files, function (index) {
+						var error = $('<span class="text-danger"/>').text('File upload failed.');
+						$(data.context.children()[index])
+							.append('<br>')
+							.append(error);
+					});
+				}).prop('disabled', !$.support.fileInput)
+					.parent().addClass($.support.fileInput ? undefined : 'disabled');
+			});
+		</script>
+	
+
+</body></html>
